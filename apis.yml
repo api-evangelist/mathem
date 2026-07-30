@@ -1,8 +1,32 @@
 aid: mathem
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mathem.png
 name: Mathem
-description: 'Mathem is a company surfaced as a portfolio company of softbank-vision-fund and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Mathem is Sweden's largest pure-play online grocery retailer, delivering
+  fresh food, household goods and pantry staples directly to consumers' homes
+  across Sweden. Customers browse and order the full assortment of a physical
+  supermarket through the mathem.se website and native iOS/Android apps, and
+  receive scheduled home delivery. Mathem merged with the Norwegian online
+  grocer Oda to form one of the Nordics' largest online grocery groups, and its
+  security and careers functions are now operated under the shared Oda
+  organization. Payments are handled through Klarna and the major card networks.
+  Mathem operates a consumer e-commerce storefront and mobile apps; it does not
+  publish a public developer API, SDKs, or a developer portal. This API
+  Evangelist profile was created as a SoftBank Vision Fund portfolio lead and
+  enriched via the enrichment pipeline; the substantive public technical surface
+  found is an RFC 9116 security.txt and an invite-only YesWeHack bug-bounty
+  program run through Oda.
 url: https://raw.githubusercontent.com/api-evangelist/mathem/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +36,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Grocery
+- E-Commerce
+- Retail
+- Food Delivery
+- Sweden
+- Nordics
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/mathem-vulnerability-disclosure.yml
+- type: Security
+  url: security/mathem-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/mathem-domain-security.yml
+- type: Website
+  url: https://www.mathem.se
+- type: SecurityTxt
+  url: well-known/mathem-security.txt
+- type: WellKnown
+  url: well-known/mathem-well-known.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
