@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.mathem.se/.well-known/
+host: https://www.mathem.se
+documents:
+  - path: /.well-known/security.txt          # RFC 9116
+    status: 200
+    file: mathem-security.txt
+  - path: /.well-known/openid-configuration   # OIDC discovery
+    status: 404
+  - path: /.well-known/oauth-authorization-server  # RFC 8414
+    status: 404
+  - path: /.well-known/api-catalog             # RFC 9727
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+notes: >-
+  Mathem publishes an RFC 9116 security.txt whose security contact and bug-bounty
+  are operated by Oda (Mathem merged with the Norwegian online grocer Oda). No
+  OIDC/OAuth discovery, API catalog, or AI-plugin manifest is exposed on the
+  consumer web host. Mathem has no public developer API surface.

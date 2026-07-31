@@ -1,0 +1,6 @@
+Contact: security@oda.com
+Preferred-Languages: en, no
+Canonical: https://www.mathem.se/.well-known/security.txt
+# Bug bounty: up to €3000 in rewards. Private program (invite-only) — send us your username for an invite.
+Bug bounty: https://www.yeswehack.com/
+Hiring: https://careers.oda.com/
